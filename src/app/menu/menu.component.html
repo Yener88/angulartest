@@ -1,12 +1,16 @@
-<header>
-    <img src="assets/img/logowhite.png">
+<header [class.headerDark]="darkMode">
 
-    <div>
-        <a class="menuelinks" href="#">Home</a>
-        <a class="menuelinks" href="#">Apps</a>
-        <a class="menuelinks" href="#">Curriculum</a>
-        <a class="menuelinks" href="#">Projekte</a>
-        <a class="menuelinks" href="#">Impressum</a>
+
+
+    <img *ngIf="!darkMode" routerLink="/" src="assets/img/logowhite.png">
+    <img *ngIf="darkMode" routerLink="/" src="assets/img/logo.png">
+
+    <div [class.darkLinks]="darkMode">
+        <a class="menuelinks" routerLink="/">Home</a>
+        <a class="menuelinks" routerLink="/data-protection">Data protection</a>
+        <!-- <a class="menuelinks" routerLink="#">Curriculum</a> -->
+        <!-- <a class="menuelinks" routerLink="#">Projects</a> -->
+        <a class="menuelinks" routerLink="/imprint">Imprint</a>
     </div>
 
 </header>

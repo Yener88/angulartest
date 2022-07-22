@@ -11,6 +11,12 @@ header {
     img {
         height: 100px;
         padding-left: 120px;
+        cursor: pointer;
+        opacity: 0.8;
+        
+        &:hover {
+            opacity: 1;
+        }
     }
     div {
         padding-right: 120px;
@@ -27,4 +33,20 @@ header {
             opacity: 1;
         }
     }
+}
+
+.darkLinks {
+    a {
+        color: black;
+        opacity: 0.8;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.headerDark {
+    background-color: white;
+    box-shadow: 0px 1px 3px 0 rgba(0, 0, 0, 0.2);
 }
