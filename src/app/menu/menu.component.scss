@@ -1,0 +1,30 @@
+header {
+    position: absolute;
+    top: 0px;
+    height: 110px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    img {
+        height: 100px;
+        padding-left: 120px;
+    }
+    div {
+        padding-right: 120px;
+    }
+    .menuelinks {
+        text-decoration: none;
+        color: white;
+        opacity: 0.8;
+        font-size: 22px;
+        padding-left: 40px;
+        letter-spacing: 2px;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
